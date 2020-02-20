@@ -9,8 +9,6 @@ Use the Custom Resource DSL to define property behaviors within custom resources
 * Comparing the current property value against a desired property value
 * Telling Chef Infra Client when and how to make changes
 
-
-
 action_class
 =====================================================
 .. tag dsl_custom_resource_method_converge_if_changed_multiple
@@ -674,7 +672,7 @@ For example, the ``httpd.rb`` file in the ``website`` cookbook could be assigned
      end
    end
 
-and is then usable in a recipe like this:
+and is then used in a recipe like this:
 
 .. code-block:: ruby
 
