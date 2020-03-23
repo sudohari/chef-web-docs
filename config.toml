@@ -4,6 +4,7 @@ title = "Chef Web Docs"
 theme = "docs-new"
 enableGitInfo = true
 pluralizeListTitles = false
+themesDir = "../chef-hugo-theme"
 
 
 [markup]
