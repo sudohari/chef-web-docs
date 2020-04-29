@@ -85,11 +85,6 @@ syntax_full_properties_list:
   the desired state."
 - "`options`, `package_name`, `source`, `timeout`, and `version` are the properties
   available to this resource."
-syntax_shortcode: null
-registry_key: false
-nameless_apt_update: false
-nameless_build_essential: false
-resource_package_options: false
 actions_list:
   :install:
     markdown: Default. Install a package. If a version is specified, install the specified

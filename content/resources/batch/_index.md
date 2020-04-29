@@ -55,10 +55,10 @@ nameless_apt_update: false
 nameless_build_essential: false
 resource_package_options: false
 actions_list:
-  :nothing:
-    shortcode: resources_common_actions_nothing.md
   :run:
     markdown: Run a batch file.
+  :nothing:
+    shortcode: resources_common_actions_nothing.md
 properties_list:
 - property: architecture
   ruby_type: Symbol

@@ -53,13 +53,13 @@ syntax_full_properties_list:
   the desired state."
 - "`frequency` is the property available to this resource."
 actions_list:
-  :nothing:
-    shortcode: resources_common_actions_nothing.md
   :periodic:
     markdown: Update the Apt repository at the interval specified by the `frequency`
       property.
   :update:
     markdown: Update the Apt repository at the start of a Chef Infra Client run.
+  :nothing:
+    shortcode: resources_common_actions_nothing.md
 properties_list:
 - property: frequency
   ruby_type: Integer

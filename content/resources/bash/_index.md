@@ -62,17 +62,14 @@ nameless_apt_update: false
 nameless_build_essential: false
 resource_package_options: false
 actions_list:
-  :nothing:
-    markdown: Prevent a command from running. This action is used to specify that
-      a command is run only when another resource notifies it.
   :run:
     markdown: Default. Run a script.
+  :nothing:
+    shortcode: resources_common_actions_nothing.md
 properties_list:
 - property: code
   ruby_type: String
   required: true
-  default_value:
-  new_in:
   description_list:
   - markdown: A quoted (" ") string of code to be executed.
 - property: creates
