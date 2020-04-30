@@ -1,17 +1,14 @@
 ---
 title: windows_package resource
 resource: windows_package
-draft: false
 aliases:
-- /resource_windows_package.html
+- "/resource_windows_package.html"
 menu:
   infra:
     title: windows_package
     identifier: chef_infra/cookbook_reference/resources/windows_package windows_package
     parent: chef_infra/cookbook_reference/resources
-
 resource_reference: true
-robots: null
 resource_description_list:
 - markdown: 'Use the **windows_package** resource to manage Microsoft Installer
 
@@ -70,21 +67,13 @@ properties_list:
 - property: checksum
   ruby_type: String
   required: false
-  default_value: null
-  new_in: null
   description_list:
-  - markdown: 'The SHA-256 checksum of the file. Use to prevent a file from being
-
-      re-downloaded. When the local file matches the checksum, Chef Infra
-
-      Client does not download it. Use when a URL is specified by the
-
-      `source` property.'
+  - markdown: The SHA-256 checksum of the file. Use to prevent a file from being re-downloaded.
+      When the local file matches the checksum, Chef Infra Client does not download
+      it. Use when a URL is specified by the `source` property.
 - property: installer_type
   ruby_type: Symbol
   required: false
-  default_value: null
-  new_in: null
   description_list:
   - markdown: 'A symbol that specifies the type of package. Possible values:
 
@@ -98,24 +87,17 @@ properties_list:
 - property: options
   ruby_type: String
   required: false
-  default_value: null
-  new_in: null
   description_list:
   - markdown: One (or more) additional options that are passed to the command.
 - property: package_name
   ruby_type: String, Array
   required: false
-  default_value: null
-  new_in: null
   description_list:
-  - markdown: 'An optional property to set the package name if it differs from the
-
-      resource block''s name.'
+  - markdown: An optional property to set the package name if it differs from the
+      resource block's name.
 - property: remote_file_attributes
   ruby_type: Hash
   required: false
-  default_value: null
-  new_in: null
   description_list:
   - markdown: 'This property allows you to define a hash of properties and their
 
@@ -127,22 +109,14 @@ properties_list:
 - property: returns
   ruby_type: String, Integer, Array of integers
   required: false
-  default_value: null
-  new_in: null
+  default_value: 0 (success) and 3010 (success where a reboot is necessary)
   description_list:
-  - markdown: '**Default
-
-      Value:** `0`
-
-
-      A comma-delimited list of return codes that indicate the success or
-
-      failure of the package command that was run.'
+  - markdown: A comma-delimited list of return codes that indicate the success or
+      failure of the package command that was run.
 - property: source
   ruby_type: String
   required: false
   default_value: The resource block's name
-  new_in: null
   description_list:
   - markdown: 'The path to a package in the local file system. The location of the
 
@@ -178,13 +152,11 @@ properties_list:
 - property: timeout
   ruby_type: String, Integer
   required: false
-  default_value: '600'
-  new_in: null
+  default_value: 600 (seconds)
   description_list:
-  - markdown: '(seconds)
 
 
-      The amount of time (in seconds) to wait before timing out.'
+  - markdown: The amount of time (in seconds) to wait before timing out.
 - property: version
   ruby_type: String, Array
   required: false
@@ -192,27 +164,6 @@ properties_list:
   new_in: null
   description_list:
   - markdown: The version of a package to be installed or upgraded.
-properties_shortcode: null
-properties_multiple_packages: false
-resource_directory_recursive_directories: false
-resources_common_atomic_update: false
-properties_resources_common_windows_security: false
-remote_file_prevent_re_downloads: false
-remote_file_unc_path: false
-ps_credential_helper: false
-ruby_style_basics_chef_log: false
-debug_recipes_chef_shell: false
-template_requirements: false
-resources_common_properties: true
-resources_common_notification: true
-resources_common_guards: true
-common_resource_functionality_multiple_packages: false
-resources_common_guard_interpreter: false
-remote_directory_recursive_directories: false
-common_resource_functionality_resources_common_windows_security: false
-handler_custom: false
-cookbook_file_specificity: false
-unit_file_verification: false
 examples_list:
 - example_heading: Install a package
   text_blocks:

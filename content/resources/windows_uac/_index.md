@@ -48,7 +48,6 @@ properties_list:
   ruby_type: Symbol
   required: false
   default_value: ":prompt_for_consent_non_windows_binaries"
-  new_in: 
   description_list:
   - markdown: Behavior of the elevation prompt for administrators in Admin Approval
       Mode. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA\ConsentPromptBehaviorAdmin.
@@ -56,22 +55,18 @@ properties_list:
   ruby_type: Symbol
   required: false
   default_value: ":prompt_for_creds"
-  new_in: 
   allowed_values: :auto_deny, :secure_prompt_for_creds, :prompt_for_creds
   description_list:
   - markdown: Behavior of the elevation prompt for standard users. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA\ConsentPromptBehaviorUser.
 - property: detect_installers
   ruby_type: true, false
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: Detect application installations and prompt for elevation. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA\EnableInstallerDetection.
 - property: enable_uac
   ruby_type: true, false
   required: false
   default_value: 'true'
-  new_in: 
   description_list:
   - markdown: Enable or disable UAC Admin Approval Mode. If this is changed a system
       restart is required. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA.
@@ -79,14 +74,12 @@ properties_list:
   ruby_type: true, false
   required: false
   default_value: 'true'
-  new_in: 
   description_list:
   - markdown: Switch to the secure desktop when prompting for elevation. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA\PromptOnSecureDesktop.
 - property: require_signed_binaries
   ruby_type: true, false
   required: false
   default_value: 'false'
-  new_in: 
   description_list:
   - markdown: Only elevate executables that are signed and validated. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA\ValidateAdminCodeSignatures.
 properties_shortcode: null

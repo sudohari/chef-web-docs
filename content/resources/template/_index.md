@@ -1,17 +1,14 @@
 ---
 title: template resource
 resource: template
-draft: false
 aliases:
-- /resource_template.html
+- "/resource_template.html"
 menu:
   infra:
     title: template
     identifier: chef_infra/cookbook_reference/resources/template template
     parent: chef_infra/cookbook_reference/resources
-
 resource_reference: true
-robots: null
 resource_description_list:
 - shortcode: template.md
 - note:
@@ -96,7 +93,6 @@ properties_list:
   ruby_type: true, false
   required: false
   default_value: null
-  new_in: null
   description_list:
   - markdown: 'Perform atomic file updates on a per-resource basis. Set to `true`
 
@@ -109,7 +105,6 @@ properties_list:
   ruby_type: Integer, false
   required: false
   default_value: '5'
-  new_in: null
   description_list:
   - markdown: 'The number of backups to be kept in `/var/chef/backup` (for UNIX-
 
@@ -121,17 +116,13 @@ properties_list:
 - property: cookbook
   ruby_type: String
   required: false
-  default_value: null
-  new_in: null
   description_list:
-  - markdown: 'The cookbook in which a file is located (if it is not located in the
-
-      current cookbook). The default value is the current cookbook.'
+  - markdown: The cookbook in which a file is located (if it is not located in the
+      current cookbook). The default value is the current cookbook.
 - property: force_unlink
   ruby_type: true, false
   required: false
   default_value: 'false'
-  new_in: null
   description_list:
   - markdown: 'How Chef Infra Client handles certain situations when the target
 

@@ -8,7 +8,6 @@ menu:
     title: windows_task
     identifier: chef_infra/cookbook_reference/resources/windows_task windows_task
     parent: chef_infra/cookbook_reference/resources
-
 resource_reference: true
 resource_description_list:
 - markdown: 'Use the **windows_task** resource to create, delete or run a Windows
@@ -131,7 +130,7 @@ properties_list:
   ruby_type: Symbol
   required: false
   description_list:
-  - markdown: "-   Frequency with which to run the task.\n-   This is a mandatory\
+  - markdown: "-   The Frequency with which to run the task.\n-   This is a mandatory\
       \ property in Chef 14.1\n-   Valid values: `:minute`, `:hourly`, `:daily`, `:weekly`,\n\
       \    `:monthly`, `:none`, `:once`, `:on_logon`, `:onstart`,\n    `:on_idle`.\n\
       -   The `:once` value requires the `start_time` property.\n-   The `:none` frequency\
@@ -231,9 +230,8 @@ properties_list:
   required: false
   default_value: The resource block's name
   description_list:
-  - markdown: 'An optional property to set the task name if it differs from the
-
-      resource block''s name. Example: ''Task Name'' or ''/Task Name'''
+  - markdown: 'An optional property to set the task name if it differs from the resource
+      block''s name. Example: `Task Name` or `/Task Name`'
 - property: user
   ruby_type: String
   required: false

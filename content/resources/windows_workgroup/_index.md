@@ -8,9 +8,7 @@ menu:
     title: windows_workgroup
     identifier: chef_infra/cookbook_reference/resources/windows_workgroup windows_workgroup
     parent: chef_infra/cookbook_reference/resources
-
 resource_reference: true
-robots: null
 resource_description_list:
 - markdown: 'Use the **windows_workgroup** resource to join or change the workgroup
 
@@ -47,8 +45,6 @@ properties_list:
 - property: password
   ruby_type: String
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: The password for the local administrator user. Required if using the
       `user` property.
@@ -56,7 +52,6 @@ properties_list:
   ruby_type: Symbol
   required: false
   default_value: ":immediate"
-  new_in: 
   description_list:
   - markdown: Controls the system reboot behavior post workgroup joining. Reboot immediately,
       after the Chef Infra Client run completes, or never. Note that a reboot is necessary
@@ -64,8 +59,6 @@ properties_list:
 - property: user
   ruby_type: String
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: The local administrator user to use to change the workgroup. Required
       if using the `password` property.
@@ -73,7 +66,6 @@ properties_list:
   ruby_type: String
   required: false
   default_value: The resource block's name
-  new_in: 
   description_list:
   - markdown: An optional property to set the workgroup name if it differs from the
       resource block's name.

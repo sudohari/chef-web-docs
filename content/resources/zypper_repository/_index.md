@@ -72,10 +72,10 @@ syntax_full_properties_list:
 - "`name` is the name given to the resource block."
 - "`action` identifies which steps Chef Infra Client will take to bring the node into
   the desired state."
-- "``autorefresh``, ``baseurl``, ``cookbook``, ``description``, ``enabled``, ``gpgautoimportkeys``,
-  ``gpgcheck``, ``gpgkey``, ``keeppackages``, ``mirrorlist``, ``mode``, ``path``,
-  ``priority``, ``refresh_cache``, ``repo_name``, ``source``, and ``type`` are the
-  properties available to this resource."
+- "`autorefresh`, `baseurl`, `cookbook`, `description`, `enabled`, `gpgautoimportkeys`,
+  `gpgcheck`, `gpgkey`, `keeppackages`, `mirrorlist`, `mode`, `path`, `priority`,
+  `refresh_cache`, `repo_name`, `source`, and `type` are the properties available
+  to this resource."
 actions_list:
   :add:
     markdown: Default action. Add a new Zypper repository.
@@ -182,7 +182,7 @@ properties_list:
 - property: type
   ruby_type: String
   required: false
-  default_value: '"NONE"'
+  default_value: NONE
   description_list:
   - markdown: Specifies the repository type.
 examples_list:

@@ -9,7 +9,6 @@ menu:
     title: yum_package
     identifier: chef_infra/cookbook_reference/resources/yum_package yum_package
     parent: chef_infra/cookbook_reference/resources
-
 resource_reference: true
 resource_description_list:
 - markdown: 'Use the **yum_package** resource to install, upgrade, and remove
@@ -82,23 +81,18 @@ properties_list:
   ruby_type: true, false
   required: false
   default_value: 'true'
-  new_in: null
   description_list:
   - markdown: Downgrade a package to satisfy requested version requirements.
 - property: arch
   ruby_type: String, Array
   required: false
-  default_value: null
-  new_in: null
   description_list:
-  - markdown: 'The architecture of the package to be installed or upgraded. This
-
-      value can also be passed as part of the package name.'
+  - markdown: The architecture of the package to be installed or upgraded. This value
+      can also be passed as part of the package name.
 - property: flush_cache
   ruby_type: Hash
   required: false
   default_value: '{"before"=>false, "after"=>false}'
-  new_in: null
   description_list:
   - markdown: 'Flush the in-memory cache before or after a Yum operation that
 
@@ -121,50 +115,33 @@ properties_list:
 - property: options
   ruby_type: String, Array
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: One (or more) additional command options that are passed to the command.
 - property: package_name
   ruby_type: String, Array
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: 'One of the following: the name of a package, the name of a package
-
-      and its architecture, the name of a dependency. Default value: the
-
-      `name` of the resource block. See "Syntax" section above for more
-
-      information.'
+      and its architecture, the name of a dependency.'
 - property: source
   ruby_type: String
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: The optional path to a package on the local file system.
 - property: timeout
   ruby_type: String, Integer
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: The amount of time (in seconds) to wait before timing out.
 - property: version
   ruby_type: String, Array
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: The version of a package to be installed or upgraded. This property
       is ignored when using the `:upgrade` action.
 - property: yum_binary
   ruby_type: String
   required: false
-  default_value: 
-  new_in: 
   description_list:
   - markdown: The path to the yum binary.
 properties_shortcode: null

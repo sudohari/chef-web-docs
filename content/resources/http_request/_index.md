@@ -1,17 +1,41 @@
 ---
+resource_reference: true
+common_resource_functionality_multiple_packages: false
+common_resource_functionality_resources_common_windows_security: false
+cookbook_file_specificity: false
+debug_recipes_chef_shell: false
+handler_custom: false
+handler_types: false
+nameless_apt_update: false
+nameless_build_essential: false
+properties_multiple_packages: false
+properties_resources_common_windows_security: false
+properties_shortcode: 
+ps_credential_helper: false
+registry_key: false
+remote_directory_recursive_directories: false
+remote_file_prevent_re_downloads: false
+remote_file_unc_path: false
+resource_directory_recursive_directories: false
+resource_package_options: false
+resources_common_atomic_update: false
+resources_common_guard_interpreter: false
+resources_common_guards: true
+resources_common_notification: true
+resources_common_properties: true
+ruby_style_basics_chef_log: false
+syntax_shortcode: 
+template_requirements: false
+unit_file_verification: false
 title: http_request resource
 resource: http_request
-draft: false
 aliases:
-- /resource_http_request.html
+- "/resource_http_request.html"
 menu:
   infra:
     title: http_request
     identifier: chef_infra/cookbook_reference/resources/http_request http_request
     parent: chef_infra/cookbook_reference/resources
-
-resource_reference: true
-robots: null
 resource_description_list:
 - markdown: 'Use the **http_request** resource to send an HTTP request (`GET`,
 
@@ -55,14 +79,14 @@ actions_list:
       \ to the resource."
   :head:
     markdown: Send a `HEAD` request.
-  :nothing:
-    shortcode: resources_common_actions_nothing.md
   :options:
     markdown: Send an `OPTIONS` request.
   :post:
     markdown: Send a `POST` request.
   :put:
     markdown: Send a `PUT` request.
+  :nothing:
+    shortcode: resources_common_actions_nothing.md
 properties_list:
 - property: headers
   ruby_type: Hash
@@ -85,31 +109,8 @@ properties_list:
 - property: url
   ruby_type: String
   required: false
-  default_value: null
-  new_in: null
   description_list:
   - markdown: The URL to which an HTTP request is sent.
-properties_shortcode: null
-properties_multiple_packages: false
-resource_directory_recursive_directories: false
-resources_common_atomic_update: false
-properties_resources_common_windows_security: false
-remote_file_prevent_re_downloads: false
-remote_file_unc_path: false
-ps_credential_helper: false
-ruby_style_basics_chef_log: false
-debug_recipes_chef_shell: false
-template_requirements: false
-resources_common_properties: true
-resources_common_notification: true
-resources_common_guards: true
-common_resource_functionality_multiple_packages: false
-resources_common_guard_interpreter: false
-remote_directory_recursive_directories: false
-common_resource_functionality_resources_common_windows_security: false
-handler_custom: false
-cookbook_file_specificity: false
-unit_file_verification: false
 examples_list:
 - example_heading: Send a GET request
   text_blocks:

@@ -1,8 +1,5 @@
 ---
-draft: false
 resource_reference: true
-robots:
-syntax_code_block:
 common_resource_functionality_multiple_packages: false
 common_resource_functionality_resources_common_windows_security: false
 cookbook_file_specificity: false
@@ -13,7 +10,7 @@ nameless_apt_update: false
 nameless_build_essential: false
 properties_multiple_packages: false
 properties_resources_common_windows_security: false
-properties_shortcode:
+properties_shortcode: 
 ps_credential_helper: false
 registry_key: false
 remote_directory_recursive_directories: false
@@ -27,7 +24,7 @@ resources_common_guards: true
 resources_common_notification: true
 resources_common_properties: true
 ruby_style_basics_chef_log: false
-syntax_shortcode:
+syntax_shortcode: 
 template_requirements: false
 unit_file_verification: false
 title: user_ulimit resource
@@ -39,7 +36,6 @@ menu:
     title: user_ulimit
     identifier: chef_infra/cookbook_reference/resources/user_ulimit user_ulimit
     parent: chef_infra/cookbook_reference/resources
-
 resource_description_list:
 - markdown: Use the user_ulimit resource to create individual ulimit files that are
     installed into the `/etc/security/limits.d/` directory.
@@ -67,151 +63,121 @@ syntax_full_code_block: |-
     virt_limit                 String, Integer
     action                     Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`user_ulimit` is the resource."
 - "`name` is the name given to the resource block."
 - "`action` identifies which steps Chef Infra Client will take to bring the node into
   the desired state."
-- "``core_hard_limit``, ``core_limit``, ``core_soft_limit``, ``filehandle_hard_limit``,
-  ``filehandle_limit``, ``filehandle_soft_limit``, ``filename``, ``memory_limit``,
-  ``process_hard_limit``, ``process_limit``, ``process_soft_limit``, ``rtprio_hard_limit``,
-  ``rtprio_limit``, ``rtprio_soft_limit``, ``stack_hard_limit``, ``stack_limit``,
-  ``stack_soft_limit``, ``username``, and ``virt_limit`` are the properties available
-  to this resource."
+- "`core_hard_limit`, `core_limit`, `core_soft_limit`, `filehandle_hard_limit`, `filehandle_limit`,
+  `filehandle_soft_limit`, `filename`, `memory_limit`, `process_hard_limit`, `process_limit`,
+  `process_soft_limit`, `rtprio_hard_limit`, `rtprio_limit`, `rtprio_soft_limit`,
+  `stack_hard_limit`, `stack_limit`, `stack_soft_limit`, `username`, and `virt_limit`
+  are the properties available to this resource."
+actions_list:
+  :create:
+    markdown: 
+  :delete:
+    markdown: 
+  :nothing:
+    shortcode: resources_common_actions_nothing.md
 properties_list:
 - property: core_hard_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: core_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: core_soft_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: filehandle_hard_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: filehandle_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: filehandle_soft_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: filename
   ruby_type: String
   required: false
   default_value: lazy default
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: memory_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: process_hard_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: process_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: process_soft_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: rtprio_hard_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: rtprio_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: rtprio_soft_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: stack_hard_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: stack_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: stack_soft_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: username
   ruby_type: String
   required: false
   default_value: The resource block's name
-  new_in:
   description_list:
-  - markdown:
+  - markdown: 
 - property: virt_limit
   ruby_type: String, Integer
   required: false
-  default_value:
-  new_in:
   description_list:
-  - markdown:
-
+  - markdown: 
+examples_list: 
 ---
