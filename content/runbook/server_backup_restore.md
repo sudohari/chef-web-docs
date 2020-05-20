@@ -1,5 +1,5 @@
 +++
-title = "Backup and Restore a Standalone or Frontend install"
+title = "Backup and Restore a Chef Infra Server Standalone or Frontend Installation"
 draft = false
 
 aliases = ["/server_backup_restore.html"]
